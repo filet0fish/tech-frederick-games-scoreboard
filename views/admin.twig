@@ -4,9 +4,9 @@
   <h1></h1>
   <p>{{ team }}</p>
   <ul>
-    {% for team in teams %}
+    {% for team in something %}
 
-         <li><a href="/teams/{{team.index}}">{{team.name}}</a> : {{team.score}}</li>
+         <li><a href="/admin/edit/">{{team.name}}</a> : {{team.score}}</li>
 
      {% endfor %}
    </ul>
