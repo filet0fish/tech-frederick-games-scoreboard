@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <h1>Create New Team Page</h1>
+    <p>Enter name in the fields, then click "Submit"</p>
+
+    <form id="frm1" action="/admin/create/team">
+    Team Name: <input type="text" name="teamName"><br>
+    <input type="Submit" value="Submit">
+    </form>
+
+  <a href="..">Admin Page</a>
+{% endblock %}

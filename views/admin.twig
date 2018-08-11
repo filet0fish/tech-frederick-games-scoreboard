@@ -1,13 +1,15 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-  <h1></h1>
-  <p>{{ team }}</p>
-  <ul>
-    {% for team in something %}
+  <h1>Admin Page</h1>
 
-         <li><a href="/admin/edit/">{{team.name}}</a> : {{team.score}}</li>
+  <ul>
+    <li><a href="/admin/create/">Add New Team</a>
+    {% for team in teams %}
+
+         <li><a href="/admin/edit/{{loop.index0}}">Edit:{{team.name}}</a></li>
 
      {% endfor %}
    </ul>
+   <a href="..">Score Board</a>
 {% endblock %}
