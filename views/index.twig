@@ -1,12 +1,12 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-  <h1></h1>
-  <p>{{ team }}</p>
+  <h1>Tech Frederick Games</h1>
+
   <ul>
     {% for team in teams %}
 
-         <li><a href="/teams/{{team.index}}">{{team.name}}</a> : {{team.score}}</li>
+         <li><a href="/teams/{{team.index}}">{{team.name}}</a> Total Score:{{team.score}}</li>
 
      {% endfor %}
    </ul>

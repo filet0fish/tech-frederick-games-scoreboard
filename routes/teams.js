@@ -54,7 +54,9 @@ router.get('/:index', function (req, res, next) {
     };
 
     // Loop through data.games and add to data.team.score
-
+    data.games.forEach(game=>{
+      data.team.score += game.score;
+    });
     res.render('teams', data);
 });
 

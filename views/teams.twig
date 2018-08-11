@@ -1,6 +1,7 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
+<h1>{{team.name}}</h1>
   <ul>
     {% for game in games %}
 
@@ -9,4 +10,5 @@
      {% endfor %}
     <li>Team Total Score:{{team.score}}</li>
   </ul>
+<a href="..">Score Board</a>
 {% endblock %}
